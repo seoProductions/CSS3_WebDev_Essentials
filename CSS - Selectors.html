@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Selectors</title>
+    <link rel="stylesheet" href="Text.css">
+</head>
+<body>
+    <div id="top-page">
+        <h1>Selectors In CSS!</h1>
+    </div>
+    <div id="mid-page">
+        <h2> HTML Attribute Selectors</h2>
+    </div>
+    <b> CSS gives you many ways to target an element in your HTML code.
+        Let's take a look at them! </b>
+    <b> NOTE: I already covered HTML Selectors in my Intro to CSS page!
+        Click <a href="CSS%20-%20Intro.html/#list">here</a> to have a quick review!
+    </b>
+    <b> NOTE: I will be using the <i>p</i> tag</b>
+
+    <ul>
+        <li> Universal Selector <span class="syntax"> p[] - p[class] </span>
+            <p> Matches any Element that has attribute. The attribute's value does not matter here</p>
+        </li>
+        <li> Equality Selector <span class="syntax"> p[=] - p[class="bordered"] </span>
+            <p> Matches any Element that has an attribute of a specific value</p>
+        </li>
+        <li> Space Selector <span class="syntax"> p[~=] - p[class~="bordered"] </span>
+            <p> Matches any Element that has an attribute of a specific value. <br>
+                This attribute can appear in a list of attributes - seperated by <i>spaces.</i>
+            </p>
+        </li>
+        <li> Prefix Selector <span class="syntax"> p[^=] - p[class^="bordered"] </span>
+            <p> Matches any Element that has an attribute value - that begins with a
+                given string "".
+            </p>
+        </li>
+        <li> SubString Selector <span class="syntax"> p[*=] - p[class*="bordered"] </span>
+            <p> Matches any Element that has an attribute value - that contains a
+                given string "".
+            </p>
+        </li>
+        <li> Suffix Selector <span class="syntax"> p[$=] - p[class$="bordered"] </span>
+            <p> Matches any Element that has an attribute value - that ends in a
+                given string "".
+            </p>
+        </li>
+    </ul>
+
+    <div>
+        <h2> HTML Pseudo-Elements</h2>
+    </div>
+    <b> Pseudo Elements can also be part of any <i>Selector</i>.
+        They begin with a colon <span class="syntax">:</span> and allow for
+        even <i>MORE</i> specific Selecting. <i>amazing right?</i>
+    </b>
+
+    <b>Some examples of pseudo-elements are <br>
+        <div id="bordered">
+            :hover <br>
+            :active <br>
+            :focus <br>
+            :first-letter <br>
+            :first-line <br>
+            :link <br>
+            :visited <br>
+        </div>
+        <br>
+        All of these are great tools to have a know! Have fun styling with CSS! :)
+    </b>
+
+
+</body>
+</html>

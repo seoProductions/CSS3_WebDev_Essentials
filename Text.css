@@ -56,6 +56,20 @@ p:first-letter {
     font-weight: bold;
 }
 
+li {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li p:first-letter {
+    font-size: 16px !important;
+    font-weight: normal;
+}
+li p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
 
 h1  {
     font-size: 32px;
@@ -69,4 +83,26 @@ h3 {
 
 a:active {
     font-weight: bolder;
+}
+
+#bordered {
+    text-align: center;
+    padding: 10px;
+    border-radius: 60px;
+    color: #FAF7F0;
+    background-color: rgba(141, 102, 68, 0.84);
+}
+
+.syntax {
+    font-weight: normal;
+    padding: 7px;
+    border-radius: 30px;
+    color: #FAF7F0;
+    background-color: rgba(141, 102, 68, 0.84);
+}
+
+ul {
+    padding: 25px;
+    border-radius: 20px;
+    background-color: rgba(239, 200, 168, 0.84);
 }
