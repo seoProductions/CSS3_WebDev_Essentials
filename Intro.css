@@ -37,13 +37,14 @@ hr {
 }
 .syntax {
     background-color: #6F4E37;
+    opacity: 70%;
     color: #FAF7F0;
     border-spacing: 8px;
     border-radius: 5px;
     text-indent: 10px;
     padding: 2px;
 }
-
+/* Comments Appear Like This!!!! */
 h4+br {
     text-indent: 10px;
 }
