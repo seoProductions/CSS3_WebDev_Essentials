@@ -1,0 +1,31 @@
+body {
+    font-family: SansSerif, "DejaVu Sans", C059, sans-serif;
+    background-color: #3B3030;
+    color: #FFF0D1;
+}
+#left-page {
+    float: left;
+    padding: 5px;
+    border-radius: 10px;
+    -moz-box-shadow: -5px -5px #513131C3;
+    -webkit-box-shadow: -5px -5px #513131C3;
+    boxshadow: -5px -5px #513131C3;
+
+
+    margin: 10px;
+
+
+    background-color: rgba(102, 67, 67, 0.76);
+}
+#right-page {
+    float: right;
+    padding: 5px;
+    border-radius: 10px;
+    -moz-box-shadow: -5px -5px #754B4BC3;
+    -webkit-box-shadow: -5px -5px #754B4BC3;
+    boxshadow: -5px -5px #754B4BC3;
+
+    margin: 10px 25px 10px 10px;
+
+    background-color: #795757;
+}
