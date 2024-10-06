@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Tables and Forms!</title>
+    <link rel="stylesheet" href="Tables%20&%20Forms.css">
+</head>
+<body>
+    <div>
+        <h1>Styling Tables & Forms using CSS3</h1>
+    </div>
+    <div>
+        <h3> Here are some examples: </h3>
+
+        <table class="table1">
+            <thead>
+            <tr>
+                <th class="empty-cell"></th>
+                <th scope="col">Heading</th>
+                <th scope="col">Heading</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Row1</th>
+                <td>32</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <th scope="row">Row2</th>
+                <td>21</td>
+                <td>52</td>
+            </tr>
+            <tr>
+                <th scope="row">Row3</th>
+                <td>77</td>
+                <td>53</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr class="footer">
+                <th class="empty-cell"></th>
+                <td>Footer1</td>
+                <td>Footer2</td>
+            </tr>
+            </tfoot>
+        </table>
+
+        <h2> table 2</h2>
+
+        <table class="table1">
+            <thead>
+            <tr>
+                <th class="empty-cell"></th>
+                <th scope="col">Heading</th>
+                <th scope="col">Heading</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Row1</th>
+                <td colspan="6">$100.00</td>
+            </tr>
+            <tr>
+                <th scope="row">Row2</th>
+                <td>8</td>
+                <td>6</td>
+                <td>1</td>
+                <td>2</td>
+                <td>5</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th scope="row">Row3</th>
+                <td>177.10</td>
+                <td>2353.54</td>
+                <td>537.54</td>
+                <td>63.23</td>
+                <td>867.30</td>
+                <td>2343.00</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr class="footer">
+                <th class="empty-cell"></th>
+                <td>Footer1</td>
+                <td>Footer2</td>
+                <td>Footer3</td>
+                <td>Footer4</td>
+                <td>Footer5</td>
+                <td>Footer6</td>
+            </tr>
+            </tfoot>
+        </table>
+
+        <h3> With css, tables are actually quite nice to look at!<br>
+             Let's style some Forms now!
+        </h3>
+
+
+        <form action="javascript:" onclick="whenFormSubmited()" method="post" id="form-1" >
+            <fieldset>
+                <legend>Info</legend>
+                <label id="name-label">
+                    Please enter your name: <br>
+                    First: <input type="text" name="first-name" class="name-inputs"><br>
+                    Last: <input type="text" name="last-name" class="name-inputs"><br>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Send Feedback</legend>
+                <label>
+                    Are you satisfied with the extension? <br>
+                    <input type="radio" name="satisfied" value="yes">yes <br>
+                    <input type="radio" name="satisfied" value="no">no <br>
+                </label>
+                <label>
+                    Let us know what we can do to improve <br>
+                    <textarea name="feedback" cols="20" rows="5" placeholder="type here!"></textarea> <br>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Communication</legend>
+                <label>
+                    Would you like to unsubscribe from email communication? <br>
+                    <input type="radio" name="unsubscribe" value="no">no <br>
+                    <input type="radio" name="unsubscribe" value="only">only promotional emails <br>
+                    <input type="radio" name="unsubscribe" value="yes">yes <br>
+                    We're sad to see you go! Please come back again! <br>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Send" id="submit">
+        </form>
+
+        <h3> This form looks great. Let's improve it even more.
+             Here, I am going to be adding fixed sizing and floats!
+        </h3>
+
+
+        <form action="javascript:" onclick="whenFormSubmited()" method="post" id="form-2" >
+            <fieldset>
+                <legend>Info</legend>
+                <label>
+                    <span>
+                        Please enter your name: <br>
+                    First: <input type="text" name="first-name" class="name-inputs"><br>
+                    Last: <input type="text" name="last-name" class="name-inputs"><br>
+                    </span>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Send Feedback</legend>
+                <label>
+                    Are you satisfied with the extension? <br>
+                    <input type="radio" name="satisfied" value="yes">yes <br>
+                    <input type="radio" name="satisfied" value="no">no <br>
+                </label>
+                <label>
+                    Let us know what we can do to improve <br>
+                    <textarea name="feedback" cols="20" rows="5" placeholder="type here!"></textarea> <br>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Communication</legend>
+                <label>
+                    Would you like to unsubscribe from email communication? <br>
+                    <input type="radio" name="unsubscribe" value="no">no <br>
+                    <input type="radio" name="unsubscribe" value="only">only promotional emails <br>
+                    <input type="radio" name="unsubscribe" value="yes">yes <br>
+                    We're sad to see you go! Please come back again! <br>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Send">
+        </form>
+
+    </div>
+
+</body>
+</html>
