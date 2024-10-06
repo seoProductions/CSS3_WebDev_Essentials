@@ -141,38 +141,54 @@
         <form action="javascript:" onclick="whenFormSubmited()" method="post" id="form-2" >
             <fieldset>
                 <legend>Info</legend>
-                <label>
-                    <span>
-                        Please enter your name: <br>
-                    First: <input type="text" name="first-name" class="name-inputs"><br>
-                    Last: <input type="text" name="last-name" class="name-inputs"><br>
-                    </span>
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend>Send Feedback</legend>
-                <label>
-                    Are you satisfied with the extension? <br>
-                    <input type="radio" name="satisfied" value="yes">yes <br>
-                    <input type="radio" name="satisfied" value="no">no <br>
-                </label>
-                <label>
-                    Let us know what we can do to improve <br>
-                    <textarea name="feedback" cols="20" rows="5" placeholder="type here!"></textarea> <br>
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend>Communication</legend>
-                <label>
-                    Would you like to unsubscribe from email communication? <br>
-                    <input type="radio" name="unsubscribe" value="no">no <br>
-                    <input type="radio" name="unsubscribe" value="only">only promotional emails <br>
-                    <input type="radio" name="unsubscribe" value="yes">yes <br>
-                    We're sad to see you go! Please come back again! <br>
-                </label>
+                Please enter your name: <br>
+
+                <div class=" title">
+                    <label for="input-first">
+                        First: </label>
+                    <input type="text" id="input-first" name="first-name" class="name-inputs" required="required"><br>
+                </div>
+                <div class="title">
+                <label for="input-last">
+                        Last: </label>
+                    <input type="text" id="input-last" name="last-name" class="name-inputs" required="required"><br>
+                </div>
+
             </fieldset>
 
-            <input type="submit" value="Send">
+            <fieldset>
+                <legend>Send Feedback</legend>
+                <div>
+                    <label>
+                        Are you satisfied with the extension? <br>
+                        <input type="radio" name="satisfied" value="yes">yes <br>
+                        <input type="radio" name="satisfied" value="no">no <br>
+                    </label>
+                    <label>
+                        Let us know what we can do to improve <br>
+                        <textarea name="feedback" cols="20" rows="5" placeholder="type here!"></textarea> <br>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Communication</legend>
+                <div>
+                    <label>
+                        Would you like to unsubscribe from email communication? <br>
+                        <input type="radio" name="unsubscribe" value="no">no <br>
+                        <input type="radio" name="unsubscribe" value="only">only promotional emails <br>
+                        <input type="radio" name="unsubscribe" value="yes">yes <br>
+                        We're sad to see you go! Please come back again! <br>
+                    </label>
+                </div>
+            </fieldset>
+
+            <br>
+            <div>
+                <label for="submit-button"> Please submit when you are done </label>
+                <input type="submit" value="submit" id="submit-button">
+            </div>
         </form>
 
     </div>

@@ -58,7 +58,7 @@ tr {
 }
 
 
-/* This rule acually prevents the browser from
+/* This rule actually prevents the browser from
     even including the element into the browser!
 
     display: hidden;
@@ -124,9 +124,9 @@ input#submit:hover {
 
 .name-inputs {
     background-color: inherit;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 
     font-weight: lighter;
     color: inherit;
@@ -134,10 +134,11 @@ input#submit:hover {
     padding: 3px;
 }
 
-label input {
-    margin: 4px;
+
+div[class*="title"] label {
+    float: left;
+    width: 80px;
+    text-align: right;
+    padding-right: 10px;
 }
 
-form#form-2 span {
-    float: right;
-}
