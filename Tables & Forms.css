@@ -110,7 +110,7 @@ textarea {
     border-radius: 10px;
     padding: 7px;
 }
-input#submit {
+input.submit {
     padding: 5px;
     border-radius: 4px;
     font-family: SansSerif, serif;
@@ -118,7 +118,7 @@ input#submit {
     background-color: #d8ccb2;
 }
 
-input#submit:hover {
+input.submit:hover {
     background-color: #FAF7F0;
 }
 
