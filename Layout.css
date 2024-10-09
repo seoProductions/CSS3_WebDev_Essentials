@@ -56,23 +56,6 @@ body {
     width: 60%;
 }
 
-#right-column {
-    position: absolute;
-
-    right: 20px;
-
-    background-color: #EEEDE7;
-    padding: 10px;
-
-    /* FIXME: I am trying to get a nice column of grey fixed
-                on the right side of the Projects Division.
-    */
-
-    /* trick to get border to show!! */
-    overflow: auto;
-    width: 10px;
-}
-
 #footer {
     position: fixed;
     bottom: 0;
