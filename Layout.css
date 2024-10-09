@@ -1,0 +1,96 @@
+/*
+    this imports other style sheets, just like your typical programing language
+    good for re-using code.
+
+    @import url("Tables & Forms.css")
+    @import "Tables & Forms.css";
+
+    both work,
+ */
+
+
+body {
+    font-family: SansSerif, "DejaVu Sans", C059, sans-serif;
+    width: 1000px;
+
+    color: #414747;
+    background-color: #fff;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    z-index: 11;
+
+    padding: 10px;
+    background-color: #B9B7BD;
+
+
+}
+
+#left-page {
+    margin-top: 70px;
+    margin-left: 10px;
+    float: left;
+
+    background-color: #EEEDE7;
+    padding: 10px;
+
+    width: 300px;
+    z-index: 1;
+
+}
+#right-page {
+    margin-top: 70px;
+    margin-right: 20px;
+    float: right;
+
+    padding-left: 20px;
+
+    background-color: #EEEDE7;
+
+    width: 60%;
+}
+
+#right-column {
+    position: absolute;
+
+    right: 20px;
+
+    background-color: #EEEDE7;
+    padding: 10px;
+
+    /* FIXME: I am trying to get a nice column of grey fixed
+                on the right side of the Projects Division.
+    */
+
+    /* trick to get border to show!! */
+    overflow: auto;
+    width: 10px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    z-index: 10;
+
+    background-color: #EEEDE7;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    overflow: auto;
+    width: 100%;
+}
+
+#header h2,  li, ul{
+    list-style: none;
+    display: inline;
+
+
+}

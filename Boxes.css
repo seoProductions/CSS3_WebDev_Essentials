@@ -4,7 +4,6 @@ body {
     color: #FFF0D1;
 }
 #left-page {
-    float: left;
     padding: 5px;
     border-radius: 10px;
     -moz-box-shadow: -5px -5px #513131C3;
@@ -18,7 +17,6 @@ body {
     background-color: rgba(102, 67, 67, 0.76);
 }
 #right-page {
-    float: right;
     padding: 5px;
     border-radius: 10px;
     -moz-box-shadow: -5px -5px #754B4BC3;
