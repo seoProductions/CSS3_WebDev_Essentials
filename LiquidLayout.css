@@ -1,12 +1,27 @@
 
 body {
     width: 90%;
-    max-width: 1000px;
-    min-width: 250px;
+    max-width: 1200px;
+    min-width: 350px;
 
     color: #414747;
-    background-color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /*
+        You can short-hand these 3 into 1!
+
+        background-color: #fff;
+        background-image: url("resources/360_F_499464783_CMvHKvK3viubFB96JR0u0nDNNE7cTj3m.jpg");
+        background-repeat: repeat;
+        background-attachment: fixed;
+
+        like this!
+
+       background: #fff url("resources/360_F_499464783_CMvHKvK3viubFB96JR0u0nDNNE7cTj3m.jpg") fixed;
+
+    */
+
+    background-color: #fff;
 }
 .evenly-spaced {
     padding: 1%;
@@ -16,9 +31,15 @@ body {
 }
 #header{
     width: 99%;
-    background-color: #cfcfcf;
+    background: #cfcfcf url(resources/code-48.png) no-repeat;
+    background-position-y: center;
+    background-position-x: 97%;
 }
-#header h2, ul, li {
+
+img.logo {
+    z-index: 11;
+}
+#header h1 {
     display: inline;
 }
 
@@ -39,4 +60,6 @@ body {
 #footer {
     width: 99%;
     background-color: #f3f3f3;
+
+
 }
