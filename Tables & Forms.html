@@ -98,13 +98,13 @@
         </h3>
 
 
-        <form action="a.js" method="post" id="form-1" >
+        <form action="#message-title" method="post" id="form-1" >
             <fieldset>
                 <legend>Info</legend>
                 <label id="name-label">
                     Please enter your name: <br>
-                    First: <input type="text" name="first-name" class="name-inputs"><br>
-                    Last: <input type="text" name="last-name" class="name-inputs"><br>
+                    First: <input type="text" name="first-name" class="name-inputs" required="required"><br>
+                    Last: <input type="text" name="last-name" class="name-inputs" required="required"><br>
                 </label>
             </fieldset>
             <fieldset>
@@ -116,7 +116,7 @@
                 </label>
                 <label>
                     Let us know what we can do to improve <br>
-                    <textarea name="feedback" cols="20" rows="5" placeholder="type here!"></textarea> <br>
+                    <textarea name="feedback" cols="20" rows="5" placeholder="type here!" id="feedback-txt" ></textarea> <br>
                 </label>
             </fieldset>
             <fieldset>
@@ -131,7 +131,7 @@
             </fieldset>
 
             <input type="submit" value="Send" class="submit" id="send-button"
-                    onclick="changeSendText()">
+                    onclick="changeSendText();">
         </form>
 
         <h3> This form looks great. Let's improve it even more.
@@ -139,7 +139,7 @@
         </h3>
 
 
-        <form action="a.js" method="post" id="form-2" >
+        <form action="#message-title" method="post" id="form-2" >
             <fieldset>
                 <legend>Info</legend>
                 Please enter your name: <br>
@@ -167,7 +167,7 @@
                     </label>
                     <label>
                         Let us know what we can do to improve <br>
-                        <textarea name="feedback" cols="20" rows="5" placeholder="type here!"></textarea> <br>
+                        <textarea name="feedback" cols="20" rows="5" placeholder="type here!" id="txtarea"></textarea> <br>
                     </label>
                 </div>
             </fieldset>
@@ -189,12 +189,22 @@
             <div>
                 <label for="submit-button"> Please submit when you are done </label>
                 <input type="submit" value="submit" class="submit" id="submit-button"
-                        onclick="this.changeSubmitText()"
+                        onclick="changeSubmitText();"
                 >
             </div>
         </form>
+        <h2 id="message-title"></h2>
 
     </div>
+    <script>
+        // run scripts in html
+        // document.body.innerHTML = '<h1>asdf</h1>';
+    </script>
+    <script src="a.js">
+        // using the src attribute, the script automatically runs after the page loads.
+        // setting up local host for this HTML file and inspecting the console in chrome - you can see all the console
+        // output that I have set up over at a.js
+    </script>
 
 </body>
 </html>

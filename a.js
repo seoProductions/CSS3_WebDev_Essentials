@@ -113,8 +113,19 @@ null;   // null
 //******************************* HTML EVENTS *****************************
 
 function changeSubmitText() {
-    document.getElementById("submit-button").innerText = "submited successfully!"
+    console.log(" submit button clicked!! ")
+
+    // just to test
+
+    const textbox = document.getElementById("txtarea");
+    const title = document.getElementById("message-title");
+    title.innerHTML = textbox.value;
+
 }
 function changeSendText() {
-    document.getElementById("send-button").innerText = "submited successfully!"
+    console.log(" send button clicked!! ")
+
+    const textbox = document.getElementById("feedback-txt");
+    const title = document.getElementById("message-title");
+    title.innerHTML = textbox.value;
 }
