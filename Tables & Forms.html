@@ -98,7 +98,7 @@
         </h3>
 
 
-        <form action="javascript:" onclick="whenFormSubmited()" method="post" id="form-1" >
+        <form action="a.js" method="post" id="form-1" >
             <fieldset>
                 <legend>Info</legend>
                 <label id="name-label">
@@ -130,7 +130,8 @@
                 </label>
             </fieldset>
 
-            <input type="submit" value="Send" class="submit">
+            <input type="submit" value="Send" class="submit" id="send-button"
+                    onclick="changeSendText()">
         </form>
 
         <h3> This form looks great. Let's improve it even more.
@@ -138,7 +139,7 @@
         </h3>
 
 
-        <form action="javascript:" onclick="whenFormSubmited()" method="post" id="form-2" >
+        <form action="a.js" method="post" id="form-2" >
             <fieldset>
                 <legend>Info</legend>
                 Please enter your name: <br>
@@ -182,12 +183,14 @@
                         We're sad to see you go! Please come back again! <br>
                     </label>
                 </div>
-            </fieldset>
+            </fieldset >
 
             <br>
             <div>
                 <label for="submit-button"> Please submit when you are done </label>
-                <input type="submit" value="submit" class="submit" id="submit-button">
+                <input type="submit" value="submit" class="submit" id="submit-button"
+                        onclick="this.changeSubmitText()"
+                >
             </div>
         </form>
 
