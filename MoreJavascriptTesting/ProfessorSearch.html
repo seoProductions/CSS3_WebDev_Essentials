@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search For A Professor!</title>
+    <link rel="stylesheet" href="../LiquidLayout.css">
+</head>
+<body>
+    <header id="header">
+        <h2> Search for a Professor at HCC! </h2>
+    </header>
+
+    <article id="left-page">
+        <h4 id="results-title">results will appear here!</h4>
+    </article>
+
+
+    <article id="right-page">
+        <h2> please note this is only intend for HCC professors</h2>
+
+
+        <label for="textarea">
+            <p> using HTTPS and the Fetch API, I am able to retrieve data strait from RMP</p>
+            <h3>First-name and Last-name</h3>
+        </label>
+        <textarea name="professor-name" id="textarea" cols="30" rows="4" placeholder="John Doe"></textarea>
+
+        <br>
+
+        <button onclick="onButtonClick()" type="submit"> Submit</button>
+
+        <p>Please don't forget to Submit!</p>
+    </article>
+
+
+</body>
+<!-- DONT FORGET THE SCRIPT TAG! --->
+<script src="behaviour.js"></script>
+</html>
