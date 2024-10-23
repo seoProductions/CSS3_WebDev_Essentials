@@ -1,0 +1,15 @@
+
+{
+  "School": "Houston Community College",
+  "Info": {
+    "Professors": [
+      "jake",
+      "john",
+      "bob",
+      "doe"
+    ],
+
+    "Department": "Natural Sciences and Mathematics",
+    "Department-Rating" : 4
+  }
+}
