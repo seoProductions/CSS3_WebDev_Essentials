@@ -7,4 +7,12 @@ function onButtonClick() {
     let text_box = document.getElementById("textarea");
 
     title_result.innerHTML = text_box.value;
+
+
+    // * Begin fetching data from RMP
+    // *
+    // *
+
+
+
 }
