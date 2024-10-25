@@ -1,8 +1,11 @@
 
+let additional_info = []
+
 function onButtonClick() {
     console.log("Button submited!");
     //
 
+    setList("\n");    // clear the list
     driver();
 
     // * Begin fetching data from RMP
@@ -20,14 +23,11 @@ async function logRMP() {
                 "Content-Type": "application/json",
                 'Accept': 'application/json',
 
-            },
-            body: JSON.stringify(
-                { user_id: 123, edited_with: "javascript via FETCH API" }),
+            }
         });
 
         const content = await rawResponce.json();
 
-        console.log();
         console.log("content" + JSON.stringify(content));
 }
 
@@ -41,15 +41,13 @@ async function driver() {
             method: "POST",
             headers:
             {
-                "Accept": "application/json",
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(text_box.value),
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            }
         })
 
     let content = await list_responce.json();
 
-    setList("\n");    // clear the list
     if (content.name !== undefined)
         appendList("Name: " + content.name + "\n");
     else
@@ -68,15 +66,21 @@ async function driver() {
         for (let i = 0; i < content.schools_length; i++)
             appendList("School " + (i+1) + ": " + content.schools[i] + "\n");
     }
-        else
+    else
         appendList("ID: N/A \n");
 
-    if (content.more !== undefined)
+    if (content.more !== undefined) {
         appendList("");
         appendList("Additional info: ");
+    }
 
 
+    additional_info.push(text_box.value);
 
+    for (let j = 0; j < additional_info.length; j++) {
+
+        appendList(additional_info[j]);
+    }
 }
 
 
