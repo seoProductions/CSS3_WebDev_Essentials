@@ -1,0 +1,26 @@
+
+
+.popup-trigger:hover {
+    cursor: grabbing;
+}
+
+.rating1 {
+    background-color: darkred;
+}
+
+.rating2 {
+    background-color: orange;
+}
+
+.rating3 {
+    background-color: yellow;
+}
+
+.rating4 {
+    background-color: greenyellow;
+}
+
+.rating5 {
+    background-color: green;
+
+}

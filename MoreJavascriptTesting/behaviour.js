@@ -2,17 +2,23 @@
 let additional_info = []
 
 function onButtonClick() {
-    console.log("Button submited!");
-    //
 
-    setList("\n");    // clear the list
+
+    initList("Professor List: ");    // clear the list
+
+    // main code to run
     driver();
 
     // * Begin fetching data from RMP
     // *
     // *
 
+    // well not for this file, but in the next test
 
+
+    // remove search button
+    let button = document.getElementById("send-button")
+    button.remove();
 }
 
 async function logRMP() {
@@ -95,13 +101,40 @@ function updateListViaTextBox() {
     title_result.innerHTML = text_box.value;
 }
 
-function setList( value) {
+// ****************
+// Created ELEMENTS
+// ****************
+
+let info_section;
+let hover_section;
+function initList( value) {
     let title_result = document.getElementById("results-title");
 
-    title_result.innerHTML = value;
+    hover_section = document.createElement("div");
+    info_section = document.createElement("div");
+
+    // apply rating color and position hover_section
+    hover_section.classList.add("rating2");
+    hover_section.classList.add("popup-trigger");
+    hover_section.innerText = "3.2";
+    title_result.insertAdjacentElement("afterend", hover_section);
+
+    // apply class attribute and position info_section
+    info_section.style.display = "none";
+    title_result.insertAdjacentElement("afterend", info_section);
+
+    // set text
+    title_result.innerText = value;
+
+    // add event listener
+    hover_section.addEventListener("mouseover", (event) => {
+        console.log("hovering!");
+        info_section.style.display = "block";
+    });
 }
-function appendList( value) {
-    let title_result = document.getElementById("results-title");
 
-    title_result.innerHTML = title_result.innerHTML + "<br />" + value;
+
+function appendList( value) {
+
+    info_section.innerHTML = info_section.innerHTML + "<br />" + value;
 }
