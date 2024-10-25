@@ -8,8 +8,9 @@
       "bob",
       "doe"
     ],
+    "length": 4,
 
     "Department": "Natural Sciences and Mathematics",
-    "Department-Rating" : 4
+    "Department-Rating" : 9
   }
 }

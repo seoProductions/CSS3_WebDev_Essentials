@@ -1,0 +1,12 @@
+{
+  "id": 23234,
+  "name": "john doe",
+  "schools_length": 3,
+  "schools":
+  [
+      "San-Jac",
+      "Hcc",
+      "Lone-Star"
+  ],
+  "more": "additional_info"
+}
