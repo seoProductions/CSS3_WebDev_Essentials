@@ -1,0 +1,5 @@
+# classify `.mas` files as Assembly
+*.json linguist-language=JSON
+
+# mark as detectable
+*.json linguist-detectable
